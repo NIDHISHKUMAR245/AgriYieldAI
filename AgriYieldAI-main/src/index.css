@@ -1,0 +1,78 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 20% 98%;
+    --foreground: 140 30% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 140 30% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 30% 8%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 120 15% 94%;
+    --secondary-foreground: 140 30% 15%;
+    --muted: 120 10% 92%;
+    --muted-foreground: 140 15% 45%;
+    --accent: 45 93% 47%;
+    --accent-foreground: 140 30% 8%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 120 15% 88%;
+    --input: 120 15% 88%;
+    --ring: 142 76% 36%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer utilities {
+  .gradient-brand {
+    background: linear-gradient(135deg, hsl(142, 76%, 36%) 0%, hsl(158, 64%, 42%) 50%, hsl(45, 93%, 47%) 100%);
+  }
+
+  .gradient-hero {
+    background: linear-gradient(180deg, rgba(5, 46, 22, 0.7) 0%, rgba(21, 128, 61, 0.4) 50%, rgba(5, 46, 22, 0.8) 100%);
+  }
+
+  .gradient-card {
+    background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(240, 253, 244, 0.95) 100%);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(45, 93%, 47%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .shimmer-bg {
+    background: linear-gradient(90deg, #f0fdf4 0%, #bbf7d0 50%, #f0fdf4 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s linear infinite;
+  }
+}
