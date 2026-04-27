@@ -43,7 +43,7 @@ AgriYieldAI/
 ## ⚙️ Installation & Setup
 
 Clone the repository:
-git clone https://github.com/your-username/agri-yield-ai.git
+git clone https://github.com/NIDHISHKUMAR245/AgriYieldAI/tree/main/AgriYieldAI-main
 
 ---
 
